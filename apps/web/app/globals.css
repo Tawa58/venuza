@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-main: var(--vz-main);
+  --color-secondary: var(--vz-secondary);
+  --color-violet: var(--vz-violet);
+  --color-cyan: var(--vz-cyan);
+  --color-ink: var(--vz-near-white);
+  --color-muted: var(--vz-muted-grey);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--vz-main);
+  color: var(--vz-near-white);
+  font-family: var(--font-sans);
+}

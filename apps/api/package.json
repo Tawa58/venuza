@@ -1,0 +1,26 @@
+{
+  "name": "@venuza/api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "tsx src/index.ts",
+    "test": "tsx --test src/app.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@venuza/database": "workspace:*",
+    "@venuza/shared": "workspace:*",
+    "dotenv": "^18.0.9",
+    "firebase-admin": "^14.5.0",
+    "hono": "^4.13.16"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@venuza/config": "workspace:*",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

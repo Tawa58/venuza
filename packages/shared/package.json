@@ -1,0 +1,21 @@
+{
+  "name": "@venuza/shared",
+  "private": true,
+  "version": "0.0.0",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@venuza/config": "workspace:*",
+    "typescript": "^7.0.2"
+  }
+}
