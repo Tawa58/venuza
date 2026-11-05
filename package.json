@@ -1,0 +1,17 @@
+{
+  "name": "venuza",
+  "private": true,
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": "26.13.0",
+    "pnpm": "10.33.4"
+  },
+  "scripts": {
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test:api": "pnpm --filter @venuza/api test",
+    "check:client-secrets": "node scripts/check-client-secrets.mjs",
+    "dev:web": "node scripts/run-client.mjs NEXT_PUBLIC_ --filter @venuza/web dev",
+    "dev:api": "pnpm --filter @venuza/api dev",
+    "dev:mobile": "node scripts/run-client.mjs EXPO_PUBLIC_ --filter @venuza/mobile start"
+  }
+}

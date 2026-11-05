@@ -1,0 +1,4 @@
+{
+  "extends": "@venuza/config/tsconfig.base.json",
+  "include": ["src/**/*.ts"]
+}
